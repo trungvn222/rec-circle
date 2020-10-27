@@ -1,0 +1,31 @@
+@function rem($size) {
+	$result: $size / $font-size-root;
+
+	@return #{$result}rem;
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+@mixin reset-ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+@mixin reset-button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
